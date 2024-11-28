@@ -1,2 +1,2 @@
-require("pat")
+require("core")
 require("plugins")
