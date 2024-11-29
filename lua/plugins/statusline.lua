@@ -1,7 +1,7 @@
 return {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
-    config = function() 
+    config = function()
         local mode = {
             "mode",
             fmt = function(str)
@@ -20,13 +20,14 @@ return {
 
         require("lualine").setup({
             options = {
-                theme = vim.g.colors_name or "auto", -- NOTE, might break...maybe idk, oh well
+                theme = vim.g.colors_name or "auto", --NOTE, might break later
                 component_separators = { left = '', right = ''},
                 section_separators = { left = '', right = ''},
             },
 
             sections = {
                 lualine_a = { mode },
+                lualine_x = { 'filetype' },
             },
         })
     end,
