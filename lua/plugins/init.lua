@@ -5,6 +5,7 @@ require("lazy").setup({
     require "plugins.treesitter",
     require "plugins.statusline",
     require "plugins.misc",
+    require "plugins.telescope",
     require "plugins.lsp",
 })
 
