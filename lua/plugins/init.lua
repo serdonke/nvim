@@ -7,6 +7,7 @@ require("lazy").setup({
     require "plugins.misc",
     require "plugins.telescope",
     require "plugins.lsp",
+    require "plugins.autocomplete",
 })
 
 vim.cmd.colorscheme("tokyonight")
