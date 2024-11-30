@@ -1,6 +1,9 @@
 return {
     'nvim-lualine/lualine.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    dependencies = {
+        'nvim-tree/nvim-web-devicons',
+        "bwpge/lualine-pretty-path",
+    },
     config = function()
         local mode = {
             "mode",
@@ -27,8 +30,13 @@ return {
 
             sections = {
                 lualine_a = { mode },
-                lualine_x = { 'filetype' },
+                lualine_c = { "pretty_path" },
+                lualine_x = {},
             },
+
+            inactive_sections = {
+                lualine_c = { "pretty_path" }
+            }
         })
     end,
 }
