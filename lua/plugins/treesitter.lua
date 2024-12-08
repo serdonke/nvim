@@ -1,6 +1,8 @@
 return {
     "nvim-treesitter/nvim-treesitter",
 
+    build = ":TSUpdate",
+
     dependencies = {
         "nvim-treesitter/nvim-treesitter-textobjects", -- TODO: fix textobjects not working, removed conf for now
     },
@@ -11,7 +13,7 @@ return {
             "vim", "vimdoc", "query",
             "rust", "cpp", "python" },
 
-            auto_install = true,
+            auto_install = false,
 
             highlight = {
                 enable = true,
