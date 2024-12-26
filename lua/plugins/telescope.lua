@@ -1,4 +1,3 @@
--- Copied verbatim from kickstart.nvim
 return  { -- Fuzzy Finder (files, lsp, etc)
     "nvim-telescope/telescope.nvim",
     event = "VimEnter",
